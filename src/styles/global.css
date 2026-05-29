@@ -1,0 +1,90 @@
+/* Scrollbar */
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #334155;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #475569;
+}
+
+/* Selection */
+
+::selection{
+  background: #3b82f6;
+  color: white;
+}
+
+/* Reusable Classes */
+
+.container{
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.glass{
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.gradient-text{
+  background: linear-gradient(
+    to right,
+    #60a5fa,
+    #a855f7,
+    #ec4899
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-padding{
+  padding: 120px 0;
+}
+
+.btn-primary{
+  padding: 16px 32px;
+  border-radius: 18px;
+  background: linear-gradient(
+    to right,
+    #3b82f6,
+    #9333ea
+  );
+
+  color: white;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 0 40px rgba(59,130,246,0.4);
+}
+
+.btn-secondary{
+  padding: 16px 32px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-secondary:hover{
+  background: rgba(255,255,255,0.1);
+}
